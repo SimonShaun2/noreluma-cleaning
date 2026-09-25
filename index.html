@@ -134,17 +134,25 @@
           <a class="button button-outline direct-email" href="mailto:cleaningquotes3@gmail.com?subject=Noreluma%20cleaning%20quote%20request">Prefer email? Email us here <span aria-hidden="true">↗</span></a>
           <div class="quote-aside"><span aria-hidden="true">✳</span><p>Cleaning is performed by local providers. Noreluma helps with requests, scheduling, and service details.</p></div>
         </div>
-        <form class="quote-form" id="quoteForm" novalidate>
+        <form class="quote-form" id="quoteForm" action="https://crm.zoho.com/crm/WebToLeadForm" method="post" accept-charset="UTF-8">
+          <!-- Public identifiers supplied by Zoho's Noreluma Web to Lead form. Keep these fields when editing the form. -->
+          <input type="hidden" name="xnQsjsdp" value="97b1fc463eb8c82d9761d759bc7b6f23ef48cc234faa494c827c97746bca1cf0">
+          <input type="hidden" name="zc_gad" value="">
+          <input type="hidden" name="xmIwtLD" value="002de1626dd7e7919bd78a629f50f5854ad0109fcb123426b16efecf04d7f3950c54c27240cb07e50227afdb1dbbd42f">
+          <input type="hidden" name="actionType" value="TGVhZHM=">
+          <input type="hidden" name="returnURL" value="null">
+          <input type="text" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot" hidden>
+          <input type="hidden" id="crmDescription" name="Description">
           <div class="form-row">
-            <div class="field"><label for="business">Business name <span>*</span></label><input id="business" name="business" autocomplete="organization" required></div>
-            <div class="field"><label for="name">Your name <span>*</span></label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="business">Business name <span>*</span></label><input id="business" name="Company" autocomplete="organization" maxlength="200" required></div>
+            <div class="field"><label for="name">Your name <span>*</span></label><input id="name" name="Last Name" autocomplete="name" maxlength="80" required></div>
           </div>
           <div class="form-row">
-            <div class="field"><label for="email">Work email <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label for="phone">Phone <span>*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="email">Work email <span>*</span></label><input id="email" name="Email" type="email" autocomplete="email" maxlength="100" required></div>
+            <div class="field"><label for="phone">Phone <span>*</span></label><input id="phone" name="Phone" type="tel" autocomplete="tel" maxlength="30" required></div>
           </div>
           <div class="form-row">
-            <div class="field"><label for="city">City <span>*</span></label><input id="city" name="city" autocomplete="address-level2" required placeholder="Tulsa or Bentonville"></div>
+            <div class="field"><label for="city">City <span>*</span></label><input id="city" name="Address - City" autocomplete="address-level2" maxlength="255" required placeholder="Tulsa or Bentonville"></div>
             <div class="field"><label for="businessType">Business type</label><select id="businessType" name="businessType"><option>Office</option><option>Dental or medical practice</option><option>Gym or fitness business</option><option>Salon or studio</option><option>Other business</option></select></div>
           </div>
           <div class="form-row">
@@ -153,8 +161,8 @@
           </div>
           <div class="field"><label for="details">What do you need cleaned?</label><textarea id="details" name="details" rows="4" placeholder="Tell us about the space, preferred start date, and any priorities."></textarea></div>
           <p class="form-note">Please do not include patient or other sensitive personal information.</p>
-          <button class="button button-dark submit-button" type="submit">Prepare quote request <span aria-hidden="true">↗</span></button>
-          <p class="form-explainer">Your email app will open a draft with these details. Review and send it to complete your request.</p>
+          <button class="button button-dark submit-button" type="submit">Send quote request <span aria-hidden="true">↗</span></button>
+          <p class="form-explainer">Your request will be sent to Noreluma. We will contact you about the next steps.</p>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
