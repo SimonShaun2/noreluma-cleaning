@@ -18,4 +18,4 @@ The sample images are AI generated illustrations of typical business spaces, not
 - Cloudflare Pages: connect this repository, choose no framework, use `exit 0` as the build command, and set the output directory to `.`.
 - Any other static host: upload the contents of this directory as the site root.
 
-The site can be public while the email fallback is in place. Before changing to a CRM form, configure it in the selected Noreluma account, verify its required email and phone fields, and test a submission. A HubSpot form can be embedded without a CMS or a private API key.
+The site can be public while the email fallback is in place. Zoho CRM Free is a candidate for a separate Noreluma CRM account owned by `cleaningquotes3@gmail.com`. After that account is created, make one web-to-lead form, require email and phone, copy Zoho's generated source code into this site, and test a submission before replacing the email fallback. This does not require a CMS, server, or private API key.
